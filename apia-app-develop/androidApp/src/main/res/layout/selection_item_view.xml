@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/countyItemBGColor"
+    android:orientation="horizontal"
+    android:outlineProvider="none"
+    android:padding="10dp"
+    android:layout_marginBottom="8dp"
+    app:layout_insetEdge="none">
+
+    <TextView
+        android:id="@+id/selectionName"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAlignment="viewStart"
+        android:textSize="20sp"
+        tools:text="{Selection item name}" />
+
+    <ImageView
+        android:id="@+id/selectionTick"
+        android:layout_width="2dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:importantForAccessibility="no"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_baseline_check_24"
+        tools:visibility="visible" />
+
+</LinearLayout>

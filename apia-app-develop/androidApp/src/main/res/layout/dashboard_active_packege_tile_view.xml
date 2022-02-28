@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/packageTileDashboard"
+    android:layout_width="200dp"
+    android:layout_height="120dp"
+    android:background="@drawable/rounded_corner_gradient"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/packageTileNum"
+        android:layout_width="81dp"
+        android:layout_height="50dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/packageTileLocationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/available_packages_in"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/packageTileLocation"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/packageTileMoreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bot_corner"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="@string/more_info"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+</androidx.appcompat.widget.LinearLayoutCompat>

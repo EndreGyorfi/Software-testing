@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardElevation="2dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="436dp"
+        android:background="?attr/cardBackgroundColor">
+
+        <TextView
+            android:id="@+id/packageCardTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="2"
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="{Package title}" />
+
+        <TextView
+            android:id="@+id/packageCardLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="8dp"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="?attr/shortDescTextColor"
+            android:textSize="14sp"
+            card_view:drawableStartCompat="@drawable/ic_baseline_location_on_24"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/packageCardTitle"
+            tools:text="{Package location}" />
+
+        <TextView
+            android:id="@+id/packageCardCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:drawablePadding="8dp"
+            card_view:drawableStartCompat="@drawable/ic_baseline_category_24"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/packageCardLocation"
+            tools:text="{Package category}" />
+
+        <TextView
+            android:id="@+id/packageCardValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="67dp"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:textColor="@android:color/holo_green_dark"
+            card_view:drawableStartCompat="@drawable/ic_baseline_euro_24"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="0.485"
+            card_view:layout_constraintStart_toEndOf="@+id/packageCardCategory"
+            card_view:layout_constraintTop_toTopOf="parent"
+            tools:text="{Package value}" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:adjustViewBounds="true"
+            android:backgroundTint="@android:color/transparent"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp"
+            android:scaleType="fitCenter"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:srcCompat="@drawable/deleteic" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/preconditionCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="15dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/packageCardCategory">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/backgroundColor"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/preconditionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="{Preconditions}"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/acceptPreconditionText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="{Acceptance of preconditions is obligatory}"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?attr/shortDescTextColor"
+                    android:textSize="14sp"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/preconditionText" />
+
+
+                <com.skydoves.progressview.ProgressView
+                    android:id="@+id/preconditionsProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    app:progressView_autoAnimate="true"
+                    app:progressView_borderColor="?attr/cardBackgroundColor"
+                    app:progressView_borderWidth="2dp"
+                    app:progressView_colorBackground="?attr/backgroundColor"
+                    app:progressView_colorProgress="@color/fieldGreen"
+                    app:progressView_labelColorInner="@color/white"
+                    app:progressView_labelColorOuter="@color/colorPrimary"
+                    app:progressView_labelSize="13sp"
+                    app:progressView_labelSpace="10dp"
+                    app:progressView_labelText="75%"
+                    app:progressView_labelTypeface="bold"
+                    app:progressView_max="100"
+                    app:progressView_min="15"
+                    app:progressView_progress="75"
+                    app:progressView_progressFromPrevious="true"
+                    app:progressView_radius="30dp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/acceptPreconditionText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fieldCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="15dp"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/preconditionCardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/addFieldLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?attr/backgroundColor"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="parent">
+
+                <TextView
+                    android:id="@+id/addedFieldsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/added_fields"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/addedFields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:padding="8dp"
+                    android:text="{Adding field is optional}"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    android:textColor="?attr/shortDescTextColor"
+                    android:textSize="14sp"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/addedFieldsText" />
+
+
+                <com.skydoves.progressview.ProgressView
+                    android:id="@+id/fieldsProgress"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_margin="8dp"
+                    app:progressView_autoAnimate="true"
+                    app:progressView_borderColor="?attr/cardBackgroundColor"
+                    app:progressView_borderWidth="2dp"
+                    app:progressView_colorBackground="?attr/backgroundColor"
+                    app:progressView_colorProgress="#EC3E3E"
+                    app:progressView_labelColorInner="@color/white"
+                    app:progressView_labelColorOuter="@color/colorPrimary"
+                    app:progressView_labelSize="13sp"
+                    app:progressView_labelSpace="10dp"
+                    app:progressView_labelText="1%"
+                    app:progressView_labelTypeface="bold"
+                    app:progressView_max="100"
+                    app:progressView_min="10"
+                    app:progressView_progressFromPrevious="true"
+                    app:progressView_radius="30dp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/addedFields" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/addToActivePackagesButton"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="56dp"
+            android:background="@drawable/transparent_bg_bordered_button"
+            android:text="@string/add_to_active_packages"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fieldCardView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

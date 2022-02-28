@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ds">
+        <attr name="android:backgroundTint" format = "color" />
+        <attr name="backgroundColor" format = "color" />
+        <attr name="cardBackgroundColor" format = "color" />
+        <attr name="navIconColor" format = "color" />
+        <attr name="bottomNavBarColor" format = "color" />
+        <attr name="colorControlNormal" format = "color" />
+        <attr name="selectedItemcolor" format = "color" />
+        <attr name="shortDescTextColor" format = "color" />
+        <attr name="myTextColor" format = "color" />
+        <attr name="countyItemBGColor" format = "color" />
+        <attr name="progressColor" format = "color" />
+    </declare-styleable>
+</resources>

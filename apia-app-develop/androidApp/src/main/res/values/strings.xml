@@ -1,0 +1,95 @@
+<resources>
+    <string name="com_auth0_domain" translatable="false">dev-5vcsos0y.eu.auth0.com</string>
+
+    <string name="main_screen" translatable="false">APPIA-APP</string>
+    <string name="select_language">Select language</string>
+    <string name="title_packages">Packages</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_diary">Diary</string>
+    <string name="title_profile">My Profile</string>
+    <string name="title_selection">Location selection</string>
+    <string name="select">select</string>
+    <string name="next">next</string>
+    <string name="back">back</string>
+    <string name="please_select_your_county">Please select your county</string>
+    <string name="please_select_your_township">Please select your township</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string name="category">Category:</string>
+    <string name="actual_years">Relevant years:</string>
+    <string name="range">Interval:</string>
+    <string name="money">Amount of money:</string>
+    <string name="county">County:</string>
+    <string name="township">Township:</string>
+    <string name="supportCategory">Support category:</string>
+    <string name="cultivationSupportCategory">Cultivation-related</string>
+    <string name="animalSupportCategory">Temporary support - Animal husbandry</string>
+    <string name="deadline">Deadline:</string>
+    <string name="preconditions">Preconditions:</string>
+    <string name="postProduction">Post production:</string>
+    <string name="requiredDocuments">Required documents:</string>
+    <string name="requirements">Requirements:</string>
+    <string name="rules">Rules:</string>
+    <string name="search_by_title">Search by title…</string>
+    <string name="continue_accept_terms">By Continuing you agree to the Terms and Conditions</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="auth_perks_unlocked">You\'ll be able to join packages to your lands and manage them easily</string>
+    <string name="the_only_agriculture_app_you_need">The only agriculture app you need</string>
+    <string name="select_to_continue">"Before continuing, you need to select one"</string>
+    <string name="error">Error!</string>
+    <string name="main_profile">My Profile</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="active_packages">Active packages</string>
+    <string name="confirm_delete">Confirm delete</string>
+    <string name="want_to_delete">Are you sure you want to delete? </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="add_to_planner">Add to\nplanner</string>
+    <string name="planned_packages">Planned packages</string>
+    <string name="login_success">Logged in successfully!</string>
+    <string name="logout_success">Logged out successfully!</string>
+    <string name="navigate_to_active">Navigate to\n active packages</string>
+    <string name="navigate_to_planner">Navigate to\n planner</string>
+    <string name="added_to_planner">Package successfully added to planner!</string>
+    <string name="added_to_active">Package successfully added to active packages!</string>
+    <string name="retry">Retry</string>
+    <string name="server_error">An internal server problem occurred.</string>
+    <string name="client_error">A client error occurred. Please try again!</string>
+    <string name="redirect_error">A redirect error occurred.</string>
+    <string name="connect_error">Could not connect to the server.</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="field_added">Field added</string>
+    <string name="edit">Edit</string>
+    <string name="size_not_empty">Size can not be empty</string>
+    <string name="field_data">Field data</string>
+    <string name="logout">Log out</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_log_out">Are you sure you want to log out?</string>
+    <string name="my_fields">My fields: </string>
+    <string name="email">E-mail address</string>
+    <string name="add_field">Add field</string>
+    <string name="size">Size</string>
+    <string name="name">Name</string>
+    <string name="details">More information: </string>
+    <string name="defaultUnit">ha</string>
+    <string name="add_package_failed">Could not add package.</string>
+    <string name="value">Value:</string>
+    <string name="total_value">Total value:</string>
+    <string name="auth_error">Authentication error occurred.</string>
+    <string name="weather_error">Something went wrong.</string>
+    <string name="weather_location_unavailable_error">Cannot access location.</string>
+    <string name="weather_tomorrow">Tomorrow\'s weather:</string>
+    <string name="more_info">MORE INFO</string>
+    <string name="available_packages_in">Available packages in :</string>
+    <string name="dashboard_info">This is your default dashboard. For further actions please set your packages as ACTIVE, then you will get in this screen the tasks related to it.</string>
+    <string name="add_field_to_planner">Add fields</string>
+    <string name="added_fields">Added fields</string>
+    <string name="add_to_active_packages">Add to active packages</string>
+
+    <string-array name="unit">
+        <item>ar</item>
+        <item>ha</item>
+    </string-array>
+</resources>

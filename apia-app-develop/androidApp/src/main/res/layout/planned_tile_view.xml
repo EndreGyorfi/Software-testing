@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/plannedTileDb"
+    android:layout_width="200dp"
+    android:layout_height="120dp"
+    android:background="@drawable/rounded_corner_green"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/plannedTileNum"
+        android:layout_width="81dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/plannedTileTitle"
+        android:layout_width="match_parent"
+        android:text="@string/planned_packages"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/plannedTileMoreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/rounded_bot_corner_green"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="@string/more_info"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+</androidx.appcompat.widget.LinearLayoutCompat>

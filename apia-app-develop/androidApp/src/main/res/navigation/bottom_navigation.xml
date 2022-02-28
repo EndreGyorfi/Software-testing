@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/packagesFragment">
+
+    <fragment
+        android:id="@+id/packagesFragment"
+        android:name="edu.codespring.ro.apiaapp.android.packages.PackagesFragment"
+        android:label="@string/title_packages"
+        tools:layout="@layout/fragment_packages" >
+        <action
+            android:id="@+id/action_packagesFragment_to_packageDetailFragment"
+            app:destination="@id/packageDetailFragment" />
+        <action
+            android:id="@+id/action_packagesFragment_to_selectionFragment"
+            app:destination="@id/selectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="edu.codespring.ro.apiaapp.android.home.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_packagesFragment"
+            app:destination="@id/packagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryFragment"
+        android:name="edu.codespring.ro.apiaapp.android.home.DiaryFragment"
+        android:label="@string/title_diary"
+        tools:layout="@layout/fragment_diary" />
+    <fragment
+        android:id="@+id/guestProfileFragment"
+        android:name="edu.codespring.ro.apiaapp.android.profile.GuestProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_guest_profile" >
+        <action
+            android:id="@+id/action_guestProfileFragment_to_userProfileFragment"
+            app:destination="@id/userProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectionFragment"
+        android:name="edu.codespring.ro.apiaapp.android.selection.SelectionFragment"
+        android:label="@string/title_selection"
+        tools:layout="@layout/fragment_selection">
+        <action
+            android:id="@+id/action_selectionFragment_to_packagesFragment"
+            app:destination="@id/packagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/packageDetailFragment"
+        android:name="edu.codespring.ro.apiaapp.android.details.PackageDetailFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details">
+        <action
+            android:id="@+id/action_packageDetailFragment_to_packagesFragment"
+            app:destination="@id/packagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="edu.codespring.ro.apiaapp.android.profile.UserProfileFragment"
+        android:label="UserProfileFragment"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_userProfileFragment_to_packageDetailFragment"
+            app:destination="@id/packageDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="edu.codespring.ro.apiaapp.android.profile.EditProfileFragment"
+        android:label="@string/edit_profile"
+        tools:layout="@layout/fragment_edit_profile">
+        <action
+            android:id="@+id/action_editProfileFragment_to_guestProfileFragment"
+            app:destination="@id/guestProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activePackagesFragment"
+        android:name="edu.codespring.ro.apiaapp.android.profile.ActivePackagesFragment"
+        android:label="fragment_active_packages"
+        tools:layout="@layout/fragment_active_packages" />
+    <fragment
+        android:id="@+id/plannedPackagesFragment"
+        android:name="edu.codespring.ro.apiaapp.android.profile.PlannedPackagesFragment"
+        android:label="fragment_planned_packages"
+        tools:layout="@layout/fragment_planned_packages">
+        <action
+            android:id="@+id/action_plannedPackagesFragment_to_addFieldToPlanner"
+            app:destination="@id/addFieldToPlanner" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="edu.codespring.ro.apiaapp.android.MainActivity"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/addFieldToPlanner"
+        android:name="edu.codespring.ro.apiaapp.android.profile.AddFieldToPlanner"
+        android:label="@string/add_field_to_planner"
+        tools:layout="@layout/fragment_add_field_to_planner" >
+        <action
+            android:id="@+id/action_addFieldToPlanner_to_plannedPackagesFragment"
+            app:destination="@id/plannedPackagesFragment" />
+    </fragment>
+</navigation>
