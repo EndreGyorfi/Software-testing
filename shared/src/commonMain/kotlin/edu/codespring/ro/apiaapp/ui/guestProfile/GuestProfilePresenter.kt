@@ -16,6 +16,7 @@ class GuestProfilePresenter : GuestProfilePresenterMvp {
 
     private val authRepository = AuthRepository()
     private var job: Job? = null
+
     private var guestProfileView: GuestProfileView? = null
 
     override fun attachView(guestProfileView: GuestProfileView) {
