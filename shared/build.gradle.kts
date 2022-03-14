@@ -1,7 +1,7 @@
 plugins {
     kotlin("multiplatform")
     id("com.android.library")
-    id("io.gitlab.arturbosch.detekt").version("1.18.0-RC2")
+    id("io.gitlab.arturbosch.detekt").version("1.17.1")
     kotlin("plugin.serialization")
 }
 
@@ -47,7 +47,7 @@ android {
     }
 
     detekt {
-        toolVersion = "1.18.0-RC2"
+        toolVersion = "1.17.1"
         config = files("$rootDir/config/detekt/detekt.yml")
         buildUponDefaultConfig = true
         input = files("src/androidMain/kotlin", "src/commonMain/kotlin")
